@@ -11,19 +11,28 @@ function App() {
         <Switch>
           <Route exact path="/" component={() => <div>Home</div>} />
           <Route exact path="/services" component={() => <div>Services</div>} />
-
-          <Route exact path="/" component={() => <div>CustomSoftware</div>} />
-
-          <Route exact path="/revolution" component={() => <div>Revolution</div>} />
-
-          <Route exact path="/" component={() => <div>Home</div>} />
-
-          <Route exact path="/" component={() => <div>Home</div>} />
-
+          <Route
+            exact
+            path="/custumSoftware"
+            component={() => <div>CustomSoftware</div>}
+          />
+          <Route
+            exact
+            path="/revolution"
+            component={() => <div>Revolution</div>}
+          />
+          <Route
+            exact
+            path="/mobileApp"
+            component={() => <div>MobileApp</div>}
+          />
+          <Route exact path="/website" component={() => <div>Website</div>} />
           <Route exact path="/about" component={() => <div>About us</div>} />
-
-          <Route exact path="/contact" component={() => <div>Contact US</div>} />
-
+          <Route
+            exact
+            path="/contact"
+            component={() => <div>Contact US</div>}
+          />
         </Switch>
       </BrowserRouter>
     </ThemeProvider>
